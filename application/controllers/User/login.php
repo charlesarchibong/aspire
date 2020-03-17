@@ -9,8 +9,10 @@ class login extends CI_Controller{
         $this->load->helper(array('form','url'));
         $this->load->library('form_validation');
     }
-     public function user_login(){
+     public function index(){
          if($this->session->aspireUser){
+             $this->load->view('user/index');
+         } else{ 
          if($this->input->post()){
              $this->form_validation->set_rules('email','Email','trim|required');
              $this->form_validation->set_rules('password','Email','trim|required');
@@ -27,7 +29,7 @@ class login extends CI_Controller{
                     $this->session->set_userdata('aspireUser',$users);
                     $this->session->set_userdata('aspireCustomer',$users);
                     $this->session->set_flashdata('success','Login successful');
-                    redirect(base_url());
+                    redirect(base_url('user/home'));
                 }
                 else{
                     $this->session->set_flashdata('false','incorrect password');

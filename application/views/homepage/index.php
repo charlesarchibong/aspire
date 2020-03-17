@@ -477,7 +477,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                                 <div class="form">
                                     <h3>Login to your account</h3>
-                                    <form action="<?=base_url("user/login/user_login")?>" method="post">
+                                    <form action="<?=base_url("user/login")?>" method="post">
                                         <input type="text" name="email" placeholder="Email or Username" required="">
                                         <input type="password" name="password" placeholder="Password" required="">
                                         <input type="submit" value="Login">

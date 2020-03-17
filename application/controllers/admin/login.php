@@ -26,7 +26,7 @@ class login extends CI_Controller{
                 if ($admin){
                     if(password_verify($this->input->post('password'), $admin->password)){
                         $this->session->set_userdata('aspireAdmin', $admin);
-                        redirect(base_url('admin/index'));
+                        redirect(base_url('admin/login'));
                     }
                     else{
                         $this->data['title']="Admin Login";
