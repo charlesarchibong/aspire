@@ -11,4 +11,8 @@ class home extends CI_Controller{
         $this->data['title']='Aspire Solutions';
         $this->load->view('user/index');
     }
+    public function makerequest(){
+        $this->data['title']='Aspire Solutions: Make Request';
+        $this->load->view('user/makerequest');
+    }
 }

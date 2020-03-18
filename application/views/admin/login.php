@@ -47,7 +47,7 @@
     
     <form action = "<?=base_url('admin/login')?>" method = "post">
         <div class="form-group">
-            <input type="text" class="form-control" name ="email" placeholder="Username or email" required autofocus>
+            <input type="text" class="form-control" name ="email" placeholder="Username or email" required autofocus autocomplete="off">
         </div>
         <div class="form-group">
             <input type="password" class="form-control" name="password" placeholder="Password" required>

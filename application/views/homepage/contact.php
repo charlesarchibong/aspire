@@ -83,12 +83,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="address mt-3">
 						<h5 class="pb-3 text-capitalize">Contact info</h5>
 						<address>
-							<p class="c-txt">90 Ikeja,Lagos State.</p>
+							<p class="c-txt">105, Ikorodu road, Lagos, Nigeria.</p>
 							<p>
-								+2349071904133</p>
+								+2348112224189</p>
 							<p>
 								<p>
-									<a href="mailto:info@example.com">gidysmartodiokineh@gamil.com</a>
+									<a href="mailto:info@example.com">Aspiresolutions@gmail.com</a>
 								</p>
 						</address>
 					</div>

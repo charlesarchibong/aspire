@@ -89,7 +89,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?=base_url("homepage/")?>" class="btn nav-link bg-danger-bright" title="Logout" data-toggle="tooltip">
+                    <a href="<?=base_url("user/login/logout")?>" class="btn nav-link bg-danger-bright" title="Logout" data-toggle="tooltip">
                         <i data-feather="log-out"></i>
                     </a>
                 </li>
@@ -103,24 +103,19 @@
         <ul>
             <li class="navigation-divider">Main</li>
             <li class="open">
-                <a href="index-2.html">
+                <a href="<?=base_url('user/home/makerequest')?>">
                     <i class="nav-link-icon" data-feather="bar-chart-2"></i>
-                    <span>Dashboard</span>
+                    <span>Make Request</span>
                 </a>
                
             </li>
-           
-            
-            
-                
-                <ul>
-                    
-                    <li><a href="<?=base_url("admin/register")?>">Register</a></li>
-                    
-                </ul>
+         <ul>
+                    <li><a href="login.html">Approved Order</a></li> 
+                    <li><a href="login.html">Pending Order</a></li> 
+                    <li><a href="login.html">Declined Order</a></li> 
+                    <li><a href="<?=base_url('homepage/contact')?>">Contact Us</a></li> 
+                    </ul>
             </li>
-            
-            
         </ul>
     </div>
     <!-- end::navigation menu -->
@@ -494,7 +489,7 @@
         <div class="container">
 
             <div class="page-header">
-                <h4>Sales Dashboard</h4>
+                <h4>Customer Dashboard</h4>
                 <small class="">Welcome, <span class="text-primary">Joshua Uzor</span></small>
             </div>
 

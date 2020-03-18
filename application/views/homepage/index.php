@@ -133,7 +133,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <div class="card-body">
     <h5 class="card-title">Laundry Appliances</h5>
     <p class="card-text">Fix your Washer, washing machine and other laundry equipments</p>
-    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal"  style="margin-top:40px">Request</a>
+    <a href="#
+    
+    " class="btn btn-primary" data-toggle="modal" data-target="#myModal"  style="margin-top:40px">Request</a>
 
     <div style="padding-bottom:20px"></div>
   </div>
@@ -275,19 +277,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <!-- Full-width slides/quotes -->
   <div class="mySlides">
   <img src="<?=base_url("assets/images/test1.jpg")?>" alt="xyt" class="img-fluid">
-    <h4>Aspire solutions is a solution  company</h4>
+    <h4>Aspire solutions is the home of good technicians</h4>
     
   </div>
 
   <div class="mySlides">
   <img src="<?=base_url("assets/images/test2.jpg")?>" alt="xyt" class="img-fluid">
-    <h4>"It's very good to be among the Aspire Solutions team"</h4>
+    <h4>Give your product a quality maintenance"</h4>
     
   </div>
 
   <div class="mySlides">
   <img src="<?=base_url("assets/images/test3.jpg")?>" alt="xyt" class="img-fluid">
-    <h4>Aspire solution is responsible for maintenance and fixing</h4>
+    <h4>Aspire solution home of quality products</h4>
     
   </div>
 
@@ -478,7 +480,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="form">
                                     <h3>Login to your account</h3>
                                     <form action="<?=base_url("user/login")?>" method="post">
-                                        <input type="text" name="email" placeholder="Email or Username" required="">
+                                        <input type="text" name="email" placeholder="Email" required="">
                                         <input type="password" name="password" placeholder="Password" required="">
                                         <input type="submit" value="Login">
                                     </form>

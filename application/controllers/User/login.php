@@ -46,11 +46,11 @@ class login extends CI_Controller{
     }
      public function logout(){
         if(!$this->session->aspireUser){
-            $this->load->view('homepage');
-        }
+          redirect(base_url());
+             }
         else{
             $this->session->unset_userdata('aspireUser');
-            redirect(base_url('homepage'));
+            redirect(base_url());
         }
      }
 }
