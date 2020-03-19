@@ -498,7 +498,7 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Product</th>
+      <th>Produ</th>
       <th>Price</th>
       <th>Order date</th>
 
