@@ -44,8 +44,8 @@ class register extends CI_Controller {
             else {
                 $this->admin_model->insert_admin_data_into_table($admindata);
                 $this->session->set_flashdata('success','you have successfully registered');
-                $this->load->view('admin/index');
-                 }
+                redirect(base_url('admin/home'));
+            }
             }
         }
         else { 

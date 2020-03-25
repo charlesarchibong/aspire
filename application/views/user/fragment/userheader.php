@@ -1,10 +1,13 @@
 <!doctype html>
 <html lang="en">
+
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title><?= $title ?></title>
+	<title>Aspire Nigeria Limited</title>
+
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="<?= base_url("assets/admin/assets/media/image/favicon.png") ?>"/>
 
@@ -34,36 +37,6 @@
 	<!-- Bootstrap 4 and responsive compatibility -->
 	<script src="<?= base_url("assets/vendors/dataTable/dataTables.bootstrap4.min.js") ?>"></script>
 	<script src="<?= base_url("assets/vendors/dataTable/dataTables.responsive.min.js") ?>"></script>
-
-	<!-- Plugin scripts -->
-	<script src="<?= base_url("assets/admin/vendors/bundle.js") ?>"></script>
-
-	<!-- Chartjs -->
-	<script src="<?= base_url("assets/admin/vendors/charts/chartjs/chart.min.js") ?>"></script>
-
-	<!-- Apex chart -->
-	<script src="<?= base_url("assets/admin/vendors/charts/apex/apexcharts.min.js") ?>"></script>
-
-	<!-- Circle progress -->
-	<script src="<?= base_url("assets/admin/vendors/circle-progress/circle-progress.min.js") ?>"></script>
-
-	<!-- Peity -->
-	<script src="<?= base_url("assets/admin/vendors/charts/peity/jquery.peity.min.js") ?>"></script>
-	<script src="<?= base_url("assets/admin/assets/js/examples/charts/peity.js") ?>"></script>
-
-	<!-- Datepicker -->
-	<script src="<?= base_url("assets/admin/vendors/datepicker/daterangepicker.js") ?>"></script>
-
-	<!-- Slick -->
-	<script src="<?= base_url("assets/admin/vendors/slick/slick.min.js") ?>"></script>
-
-	<!-- Vamp -->
-	<script src="<?= base_url("assets/admin/vendors/vmap/jquery.vmap.min.js") ?>"></script>
-	<script src="<?= base_url("assets/admin/vendors/vmap/maps/jquery.vmap.usa.js") ?>"></script>
-	<script src="assets/admin/assets/js/examples/vmap.js"></script>
-
-	<!-- Dashboard scripts -->
-	<script src="<?= base_url("assets/admin/assets/js/examples/dashboard.js") ?>"></script>
 </head>
 <body>
 
@@ -105,17 +78,21 @@
 				 alt="image">
 		</figure>
 		<div>
-			<h5><?= $this->session->aspireAdmin->firstname . ' ' . $this->session->aspireAdmin->lastname ?></h5>
-			<p class="text-muted">Administrator</p>
+			<h5><?= $this->session->aspireUser->username ?></h5>
+			<p class="text-muted">User</p>
 			<ul class="nav">
 				<li class="nav-item">
-					<a href="<?= base_url('admin/profile') ?>" class="btn nav-link bg-info-bright" title="Profile"
-					   data-toggle="tooltip">
+					<a href="profile.html" class="btn nav-link bg-info-bright" title="Profile" data-toggle="tooltip">
 						<i data-feather="user"></i>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="<?= base_url("admin/login/logout") ?>" class="btn nav-link bg-danger-bright" title="Logout"
+					<a href="#" class="btn nav-link bg-success-bright" title="Settings" data-toggle="tooltip">
+						<i data-feather="settings"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="<?= base_url("user/login/logout") ?>" class="btn nav-link bg-danger-bright" title="Logout"
 					   data-toggle="tooltip">
 						<i data-feather="log-out"></i>
 					</a>
@@ -125,43 +102,24 @@
 	</header>
 	<!-- end::navigation header -->
 
-
 	<!-- begin::navigation menu -->
 	<div class="navigation-menu-body">
 		<ul>
-			<li class="navigation-divider">Main</li>
-			<li>
-				<a href="index-2.html">
+			<!-- <li class="navigation-divider">Main</li>
+			<li class="open">
+				<a href="('user/home/makerequest')?>">
 					<i class="nav-link-icon" data-feather="bar-chart-2"></i>
-					<span>Dashboard</span>
+					<span>Make Request</span>
 				</a>
-				<ul>
-					<li><a href="index-2.html">Dashboard</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="<?= base_url('admin/requests') ?>">
-					<i class="nav-link-icon" data-feather="message-circle"></i>
-					<span>Requests</span>
-				</a>
-			</li>
-			<li>
-				<a href="<?= base_url('admin/register') ?>">
-					<i class="nav-link-icon" data-feather="plus"></i>
-					<span>Add new Admin</span>
-				</a>
-			</li>
-			<li>
-				<a href="<?= base_url('admin/services') ?>">
-					<i class="nav-link-icon" data-feather="plus"></i>
-					<span>Manage Services</span>
-				</a>
-			</li>
-			<li>
-				<a href="<?= base_url('admin/services') ?>">
-					<i class="nav-link-icon" data-feather="plus"></i>
-					<span>Manage Technicians</span>
-				</a>
+			   
+			</li> -->
+			<ul>
+				<li><a href="<?= base_url('user/home') ?>">Make request</a></li>
+				<li><a href="<?= base_url('user/home/userpending') ?>">Pending request</a></li>
+				<li><a href="<?= base_url('user/home/userapproved') ?>">Approved request</a></li>
+				<li><a href="<?= base_url('user/home/userdeclined') ?>">Declined request</a></li>
+				<li><a href="<?= base_url('homepage/contact') ?>">Contact Us</a></li>
+			</ul>
 			</li>
 		</ul>
 	</div>
